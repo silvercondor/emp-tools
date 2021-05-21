@@ -15,6 +15,10 @@ export const Contracts: { [networkId: number]: ContractArguments[] } = {
     ["0x1c3f1A342c8D9591D9759220d114C685FD1cF6b8", "EMP", "1"], // YD-BTC-MAR21
     ["0x0f4e2a456aAfc0068a0718E3107B88d2e8f2bfEF", "EMP", "2"], // YD-ETH-JUNE21
     ["0xd9af2d7E4cF86aAfBCf688a47Bd6b95Da9F7c838", "EMP", "2"], // YD-BTC-JUNE21
+
+    ["0x46f5E363e69798a74c8422BFb9EDB63e3FB0f08a", "EMP", "2"], // pxgold2022
+    ["0xb40BA94747c59d076B3c189E3A031547492013da", "EMP", "2"], // pxusd2022
+    ["0xD50fbace72352C2e15E0986b8Ad2599627B5c340", "EMP", "2"], // pxgold2021
   ].reverse() as ContractArguments[],
   42: [
     ["0x3366b8549047C66E985EcC43026ceD3E831e46A9", "EMP", "1"], // uUSDrBTC Kovan Sep20
