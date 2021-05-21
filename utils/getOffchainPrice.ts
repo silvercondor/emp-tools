@@ -106,7 +106,8 @@ export function getPricefeedParamsFromTokenSymbol(symbol: string | null) {
     case symbol?.includes("NEW-PERP-TEST"):
       return PRICEFEED_PARAMS.ethbtc;
     default:
-      return null;
+      // return null;
+      return PRICEFEED_PARAMS.ethbtc;
   }
 }
 

@@ -103,7 +103,8 @@ const AllSponsors = () => {
   const { activeSponsors } = EmpSponsors.useContainer();
   const { getEtherscanUrl } = Etherscan.useContainer();
 
-  const invertedPrice = isPricefeedInvertedFromTokenSymbol(tokenSymbol);
+  // const invertedPrice = isPricefeedInvertedFromTokenSymbol(tokenSymbol);
+  const invertedPrice = 1;
 
   // Pagination
   const [page, setPage] = useState<number>(1);
