@@ -31,24 +31,24 @@ const server = Ganache.server({
 });
 
 // listen and run post-launch code
-server.listen(port, async (err: any) => {
-  if (err) {
-    console.error(err);
-  } else {
-    console.log(`Forked off of node: ${nodeUrl}\n`);
-    console.log(`Test private key:\n`);
-    console.log(`\t${privKey}`);
-    console.log(`\nTest chain started on port ${port}, listening...`);
+// server.listen(port, async (err: any) => {
+//   if (err) {
+//     console.error(err);
+//   } else {
+//     console.log(`Forked off of node: ${nodeUrl}\n`);
+//     console.log(`Test private key:\n`);
+//     console.log(`\t${privKey}`);
+//     console.log(`\nTest chain started on port ${port}, listening...`);
 
-    // retrieve some DAI from Uniswap
-    if (privKey) {
-      const provider = new ethers.providers.JsonRpcProvider();
-      const wallet = new ethers.Wallet(privKey);
-      await getDai(wallet.connect(provider));
-    } else {
-      console.log(`No "PRIV_KEY" specified to mint DAI to`);
-    }
-  }
-});
+//     // retrieve some DAI from Uniswap
+//     if (privKey) {
+//       const provider = new ethers.providers.JsonRpcProvider();
+//       const wallet = new ethers.Wallet(privKey);
+//       await getDai(wallet.connect(provider));
+//     } else {
+//       console.log(`No "PRIV_KEY" specified to mint DAI to`);
+//     }
+//   }
+// });
 
 export {};
