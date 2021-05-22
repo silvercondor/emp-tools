@@ -87,12 +87,12 @@ const CurrentLiquidityProviders = () => {
         </Typography>
         Logarithmic:{" "}
         <Switch checked={switchState} onChange={handleSwitchChange} />
-        <Chart
+        {/* <Chart
           options={plotConfig.options}
           series={plotConfig.series}
           type="bar"
           height={550}
-        />
+        /> */}
       </span>
     );
   } else {

@@ -136,12 +136,12 @@ const CurrentSponsorsCollateralRatio = () => {
         <Typography variant="h5" style={{ marginBottom: "10px" }}>
           {symbol} Liquidation Prices vs. Collateral
         </Typography>
-        <Chart
+        {/* <Chart
           options={plotConfig.options}
           series={plotConfig.series}
           type="bar"
           height={550}
-        />
+        /> */}
       </span>
     );
   } else {
